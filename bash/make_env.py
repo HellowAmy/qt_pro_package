@@ -43,8 +43,8 @@ def main():
     subprocess.run(cmd_deploy, shell=True, capture_output=True, text=True)
 
     # 将 data 目录压缩成 7z 压缩包
-    os.chdir(path_cwd)
-    cmd_7z = "7z a {} {}".format("tmp/data.7z", "tmp/data/")
+    os.chdir(path_cwd + "/tmp")
+    cmd_7z = "7z a {} {}".format("data.7z", "data/")
     print("pwd: " + os.getcwd())
     print("cmd: " + cmd_7z)
     subprocess.run(cmd_7z, shell=True, capture_output=True, text=True)
