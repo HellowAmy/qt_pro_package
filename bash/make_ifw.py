@@ -53,8 +53,8 @@ def main():
         sjson["InstallerWindowIcon"], ifw_config + "/" + sjson["InstallerWindowIcon"]
     )
     func.copy_file(
-        sjson["InstallerApplicationIcon"],
-        ifw_config + "/" + sjson["InstallerApplicationIcon"],
+        sjson["InstallerApplicationIcon"] + ".ico",
+        ifw_config + "/" + sjson["InstallerApplicationIcon"] + ".ico",
     )
     func.copy_file("tmp/data.7z", ifw_packages_main_data + "/" + "data.7z")
     func.copy_file("license.txt", ifw_packages_main_meta + "/" + "license.txt")

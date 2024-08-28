@@ -26,4 +26,8 @@ Component.prototype.createOperations = function () {
 
         console.error("[添加桌面图标]" + desktopIconPath)
     }
+    else {
+        component.addOperation("CreateShortcut", "@TargetDir@/[##Exec##].exe", "@StartMenuDir@/[##Name##].lnk","iconPath=@TargetDir@/[##DesktopIcon##]");
+        component.addOperation("CreateShortcut", "@TargetDir@/[##Exec##].exe", "@DesktopDir@/[##Name##].lnk","iconPath=@TargetDir@/[##DesktopIcon##]");
+    }
 }

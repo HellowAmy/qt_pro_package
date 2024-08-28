@@ -11,6 +11,7 @@
     <InstallerApplicationIcon>[##InstallerApplicationIcon##]</InstallerApplicationIcon>
     <ControlScript>config.qs</ControlScript>
 
+    <StartMenuDir>[##Name##]</StartMenuDir>
     <RunProgram>@TargetDir@</RunProgram>
     <RunProgramDescription>安装完成后运行程序</RunProgramDescription>
 

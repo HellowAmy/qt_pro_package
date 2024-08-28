@@ -8,7 +8,7 @@ def main():
         sjson = json.load(fjson)
         if os.path.exists("tmp/ifw/"):
             os.chdir("tmp/ifw/")
-            cmd = "binarycreator -c config/config.xml -p packages ../{}.run".format(
+            cmd = "binarycreator -c config/config.xml -p packages ../{}".format(
                 sjson["Name"]
             )
             print("pwd: ", os.getcwd())

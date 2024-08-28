@@ -31,13 +31,24 @@ Controller.prototype.TargetDirectoryPageCallback = function () {
     var widget = gui.currentPageWidget();
     if (widget != null) {
         var path = widget.TargetDirectoryLineEdit.text;
-        var filebib = path + "/maintenancetool";
+        var filebib = "";
+        var toolpath = "";
+        if (systemInfo.kernelType == "linux") {
+            toolpath = "/maintenancetool";
+        }
+        else {
+            toolpath = "/maintenancetool.exe";
+        }
+        filebib = path + toolpath;
+
         if (installer.fileExists(filebib)) {
             var yes = QMessageBox.question("提示", "覆盖安装", "安装目录已存在,是否覆盖安装<br>[ " + path + " ]");
             if (yes != QMessageBox.No) {
                 console.error("[覆盖安装]")
-                installer.execute(path + "/maintenancetool", ["pr", "-c"]);
-                gui.clickButton(buttons.NextButton);
+                installer.execute(filebib, ["pr", "-c"]);
+                if (systemInfo.kernelType === "linux") {
+                    gui.clickButton(buttons.NextButton);
+                }
             }
             else {
                 console.error("[选择其他路径安装]")

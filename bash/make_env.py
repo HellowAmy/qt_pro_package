@@ -3,6 +3,8 @@ import shutil
 import pathlib
 import subprocess
 import json
+import py7zr
+import platform
 
 
 def main():
@@ -36,19 +38,23 @@ def main():
     print(name_exec)
 
     # 打包环境依赖
-    cmd_deploy = "linuxdeployqt {} -qmake={}".format(name_exec, path_qmake)
+    cmd_deploy = ""
+    if platform.system() == "Linux":
+        cmd_deploy = "linuxdeployqt {} -qmake={}".format(name_exec, path_qmake)
+    else:
+        cmd_deploy = "windeployqt.exe {}".format(name_exec, path_qmake)
+
+    print("platform: " + platform.system())
     print("cmd: " + cmd_deploy)
     print("pwd: " + os.getcwd())
     os.chdir("tmp/data/bin/")
     subprocess.run(cmd_deploy, shell=True, capture_output=True, text=True)
 
     # 将 data 目录压缩成 7z 压缩包
+    print("make 7z: data.7z")
     os.chdir(path_cwd + "/tmp")
-    cmd_7z = "7z a {} {}".format("data.7z", "data/")
-    print("pwd: " + os.getcwd())
-    print("cmd: " + cmd_7z)
-    subprocess.run(cmd_7z, shell=True, capture_output=True, text=True)
-
+    with py7zr.SevenZipFile("data.7z","w") as z:
+        z.writeall("data/")
     print("== end ==")
 
 
