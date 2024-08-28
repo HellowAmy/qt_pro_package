@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>[##DisplayName##]</DisplayName>
+    <Description>[##Description##]</Description>
+    <Version>[##Version##]</Version>
+    <ReleaseDate>[##ReleaseDate##]</ReleaseDate>
+    <Default>true</Default>
+    <Script>package.qs</Script>
+    <Licenses>
+        <License name="GPL许可协议" file="license.txt" />
+    </Licenses>
+</Package>

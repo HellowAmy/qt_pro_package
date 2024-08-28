@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>[##Name##]</Name>
+    <Version>[##Version##]</Version>
+    <Title>[##Title##]</Title> 
+    <Publisher>[##Publisher##]</Publisher>
+    <TargetDir>@HomeDir@/BhApp/[##TargetDir##]</TargetDir>
+
+    <Logo>[##Logo##]</Logo>
+    <InstallerWindowIcon>[##InstallerWindowIcon##]</InstallerWindowIcon>
+    <InstallerApplicationIcon>[##InstallerApplicationIcon##]</InstallerApplicationIcon>
+    <ControlScript>config.qs</ControlScript>
+
+    <RunProgram>@TargetDir@</RunProgram>
+    <RunProgramDescription>安装完成后运行程序</RunProgramDescription>
+
+    <RemoveTargetDir>true</RemoveTargetDir>
+    <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
+
+</Installer>

@@ -1,0 +1,17 @@
+{
+    "Name": "CalcBin",
+    "Title": "CalcBin",
+    "DisplayName": "CalcBin",
+    "DesktopName": "CalcBin",
+    "TargetDir": "CalcBin",
+    "ReleaseDate": "2012-12-12",
+    "Publisher": "Hbear",
+    "Version": "1.0.0",
+    "Logo": "",
+    "InstallerWindowIcon": "iwin.png",
+    "InstallerApplicationIcon": "iapp.png",
+    "Description": "This is a numerical conversion program",
+    "Exec": "data/bin/calcbin",
+    "ExecRunPath": "data/bin/",
+    "DesktopIcon": "data/config/pic/calc.png"
+}
