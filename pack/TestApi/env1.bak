@@ -1,0 +1,8 @@
+{
+    "QMakePath": "/home/red/open/devtools/qt/5.15.2/gcc_64/bin/qmake",
+    "ExecPath": "/home/red/open/github/qt_bin_calc/build/calcbin",
+    "CopyConfig": [
+        "/home/red/open/github/qt_bin_calc/config/",
+        "/home/red/open/github/qt_bin_calc/bash/"
+    ]
+}

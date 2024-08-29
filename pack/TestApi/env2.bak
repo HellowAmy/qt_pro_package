@@ -1,0 +1,8 @@
+{
+    "QMakePath": "",
+    "ExecPath": "C:\\open\\github\\qt_bin_calc\\build\\calcbin.exe",
+    "CopyConfig": [
+        "C:\\open\\github\\qt_bin_calc\\config",
+        "C:\\open\\github\\qt_bin_calc\\bash"
+    ]
+}

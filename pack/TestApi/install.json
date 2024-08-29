@@ -1,0 +1,17 @@
+{
+    "Name": "MeetEaseApiTest",
+    "Title": "MeetEaseApiTest",
+    "DesktopName": "MeetEaseApiTest",
+    "TargetDir": "MeetEaseApiTest",
+    "ReleaseDate": "2012-12-12",
+    "Publisher": "Hbear",
+    "Version": "1.0.0",
+    "Logo": "",
+    "InstallerWindowIcon": "iwin.png",
+    "InstallerApplicationIcon": "iapp",
+    "DisplayName": "主程序",
+    "Description": "主程序安装包，必须勾选负责将无法正常运行程序",
+    "Exec": "data/bin/MeetEaseApiTest",
+    "ExecRunPath": "data/bin/",
+    "DesktopIcon": "data/config/pic/logo.ico"
+}
