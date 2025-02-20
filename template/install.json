@@ -1,0 +1,15 @@
+{
+    "Name": "",
+    "Title": "",
+    "DesktopName": "",
+    "TargetDir": "",
+    "ReleaseDate": "2012-12-12",
+    "Publisher": "Hbear",
+    "Version": "1.0.0",
+    "Logo": "",
+    "InstallerWindowIcon": "iwin.png",
+    "InstallerApplicationIcon": "iapp.png",
+    "Exec": "data/bin/",
+    "ExecRunPath": "data/bin/",
+    "DesktopIcon": "data/"
+}

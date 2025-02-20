@@ -1,0 +1,4 @@
+/**/tmp/
+/pack/**
+!/pack/.gitkeep
+/bash/__pycache__/

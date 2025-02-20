@@ -1,0 +1,34 @@
+{
+    "TrOverlapTips": {
+        "Chinese": "提示",
+        "English": "Tips"
+    },
+    "TrOverlapTitle": {
+        "Chinese": "覆盖安装",
+        "English": "Overwrite installation"
+    },
+    "TrOverlapContent": {
+        "Chinese": "安装目录已存在,是否覆盖安装",
+        "English": "The installation directory already exists, whether to overwrite the installation"
+    },
+    "TrCheckInstall": {
+        "Chinese": "同意 [ 已阅读协议并同意安装 ]",
+        "English": "Agree [Read the agreement and agree to install]"
+    },
+    "TrRunProgram": {
+        "Chinese": "启动程序",
+        "English": "Start the program"
+    },
+    "TrRunProgramDescription": {
+        "Chinese": "完成安装并启动程序",
+        "English": "Complete the installation and start the program"
+    },
+    "TrDisplayName": {
+        "Chinese": "主程序",
+        "English": "Main program"
+    },
+    "TrDescription": {
+        "Chinese": "主程序功能安装",
+        "English": "Main program function installation"
+    }
+}
